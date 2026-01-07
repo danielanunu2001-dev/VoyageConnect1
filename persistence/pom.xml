@@ -5,20 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.travelagency</groupId>
-        <artifactId>travel-agency-parent</artifactId>
+        <artifactId>voyageconnect1-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>travel-agency-persistence</artifactId>
+    <artifactId>voyageconnect1-persistence</artifactId>
     <packaging>jar</packaging>
 
-    <name>Travel Agency :: Persistence</name>
+    <name>VoyageConnect1 :: Persistence</name>
 
     <dependencies>
         <!-- Project Modules -->
         <dependency>
             <groupId>com.travelagency</groupId>
-            <artifactId>travel-agency-core</artifactId>
+            <artifactId>voyageconnect1-core</artifactId>
         </dependency>
 
         <!-- Spring -->

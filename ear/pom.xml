@@ -5,20 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.travelagency</groupId>
-        <artifactId>travel-agency-parent</artifactId>
+        <artifactId>voyageconnect1-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>travel-agency-ear</artifactId>
+    <artifactId>voyageconnect1-ear</artifactId>
     <packaging>ear</packaging>
 
-    <name>Travel Agency :: EAR</name>
+    <name>VoyageConnect1 :: EAR</name>
 
     <dependencies>
         <!-- Project Modules -->
         <dependency>
             <groupId>com.travelagency</groupId>
-            <artifactId>travel-agency-web</artifactId>
+            <artifactId>voyageconnect1-web</artifactId>
             <type>war</type>
         </dependency>
     </dependencies>
@@ -36,18 +36,18 @@
                     <modules>
                         <webModule>
                             <groupId>com.travelagency</groupId>
-                            <artifactId>travel-agency-web</artifactId>
-                            <contextRoot>/travel-agency</contextRoot>
+                            <artifactId>voyageconnect1-web</artifactId>
+                            <contextRoot>/voyageconnect1</contextRoot>
                         </webModule>
                     </modules>
-                    <applicationName>travel-agency</applicationName>
+                    <applicationName>voyageconnect1</applicationName>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
                 <configuration>
-                    <filename>travel-agency-ear-${project.version}.ear</filename>
+                    <filename>voyageconnect1-ear-${project.version}.ear</filename>
                     <hostname>${wildfly.hostname}</hostname>
                     <port>${wildfly.port}</port>
                     <username>${wildfly.username}</username>
